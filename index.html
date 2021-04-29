@@ -54,21 +54,55 @@ footer {
   font-style: italic;
   line-height: 1.5em;
 }
+
+#ar-button {
+    background-image: url(../../assets/ic_view_in_ar_new_googblue_48dp.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: 12px 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    bottom: 132px;
+    padding: 0px 16px 0px 40px;
+    font-family: Roboto Regular, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    color:#4285f4;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 18px;
+    border: 1px solid #DADCE0;
+  }
+
+  #ar-button:active {
+    background-color: #E8EAED;
+  }
+
+  #ar-button:focus {
+    outline: none;
+  }
+
+  #ar-button:focus-visible {
+    outline: 1px solid #4285f4;
+  }
         </style>
         <!-- <div id="card"> -->
             <!-- All you need to put beautiful, interactive 3D content on your site: -->
             <model-viewer src="digit7.glb"
                           ios-src="digit7_ios.usdz"
-                          alt="Tall Lamp"
-                          background-color="#eeeeee"
-                          shadow-intensity="1"
+                          alt="digit7 model"
+                          ar-modes="webxr scene-viewer quick-look"
+                          ar-scale="auto"
                           camera-controls
-                          interaction-prompt="auto"
-                          auto-rotate ar magic-leap
-                          quick-look-browsers="safari chrome">
+                          auto-rotate ar magic-leap>
             </model-viewer>         
           <!-- </div>   -->
           <footer>
+            <button slot="ar-button" id="ar-button">
+                View in your space
+              </button>
           </footer>
           
           
