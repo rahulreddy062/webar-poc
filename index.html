@@ -90,8 +90,8 @@ footer {
         </style>
         <!-- <div id="card"> -->
             <!-- All you need to put beautiful, interactive 3D content on your site: -->
-            <model-viewer src="./scene.glb"
-                          ios-src="./scifi.usdz"
+            <model-viewer src="https://digit7-ar.s3.us-east-2.amazonaws.com/Digit7_AR_Wall_Mod5_Anim1.glb"
+                          ios-src="https://digit7-ar.s3.us-east-2.amazonaws.com/Digit7_AR_Wall_Mod5_Anim1.usdz"
                           camera-controls
                            ar-modes="scene-viewer quick-look"
                           auto-rotate
@@ -102,7 +102,8 @@ footer {
                            color: white; font-size: large;  position: absolute; top: 16px; right: 16px; ">
                                    ACTIVATE AR
                           </button>  
-            </model-viewer>        
+            </model-viewer>   
+           
           <!-- </div>   -->
           <footer>
           </footer>
@@ -112,12 +113,12 @@ footer {
         
           <!-- Loads <model-viewer> for modern browsers: -->
           <script type="module"
-              src="https://unpkg.com/@google/model-viewer@v0.6.0/dist/model-viewer.js">
+              src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
           </script>
         
           <!-- Loads <model-viewer> for old browsers like IE11: -->
           <script nomodule
-              src="https://unpkg.com/@google/model-viewer@v0.6.0/dist/model-viewer-legacy.js">
+              src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
           </script>
     </body>
 </html>
